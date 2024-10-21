@@ -1,0 +1,15 @@
+﻿<Window x:Class="zadnie2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button Content="Dodaj artykuł" Width="150" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" Click="AddArticleButton_Click"/>
+        <Button Content="Wyświetl artykuły" Width="150" Height="50" HorizontalAlignment="Right" VerticalAlignment="Top" Click="DisplayArticlesButton_Click"/>
+
+        <TextBox Name="ArticleNameTextBox" Width="200" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,60,0,0" GotFocus="ArticleNameTextBox_GotFocus" LostFocus="ArticleNameTextBox_LostFocus" Text="Nazwa artykułu"/>
+        <TextBox Name="ArticleCategoryTextBox" Width="200" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,100,0,0" GotFocus="ArticleCategoryTextBox_GotFocus" LostFocus="ArticleCategoryTextBox_LostFocus" Text="Kategoria"/>
+        <TextBox Name="ArticleContentTextBox" Width="200" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,140,0,0" GotFocus="ArticleContentTextBox_GotFocus" LostFocus="ArticleContentTextBox_LostFocus" Text="Treść artykułu"/>
+
+        <ListView Name="ArticlesList" Width="400" Height="150" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,10"/>
+    </Grid>
+</Window>
